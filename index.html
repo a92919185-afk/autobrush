@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>AutoBrush® - The World's Only ADA-Accepted U-Shaped Toothbrush</title>
+    <meta name="title" content="AutoBrush® - The World's Only ADA-Accepted U-Shaped Toothbrush">
+    <meta name="description"
+        content="Stop guessing if your family is brushing right. AutoBrush® uses patented nylon bristles to clean 5.1x better in just 30 seconds. The only ADA-accepted U-shaped toothbrush.">
+    <meta name="keywords"
+        content="AutoBrush, U-shaped toothbrush, ADA accepted toothbrush, electric toothbrush for kids, best toothbrush for toddlers, 30 second toothbrush, automatic toothbrush">
+    <meta name="author" content="AutoBrush">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://try.autobrush.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://try.autobrush.com/">
+    <meta property="og:title" content="AutoBrush® - The World's Only ADA-Accepted U-Shaped Toothbrush">
+    <meta property="og:description"
+        content="Stop guessing if your family is brushing right. AutoBrush® cleans 5.1x better in just 30 seconds. Built for kids and adults.">
+    <meta property="og:image" content="https://try.autobrush.com/images/hero.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://try.autobrush.com/">
+    <meta property="twitter:title" content="AutoBrush® - The World's Only ADA-Accepted U-Shaped Toothbrush">
+    <meta property="twitter:description"
+        content="Stop guessing if your family is brushing right. AutoBrush® cleans 5.1x better in just 30 seconds. Built for kids and adults.">
+    <meta property="twitter:image" content="https://try.autobrush.com/images/hero.png">
+
+    <!-- Schema.org Markup for Product (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "AutoBrush® - U-Shaped Toothbrush",
+      "image": "https://try.autobrush.com/images/hero.png",
+      "description": "The world's only ADA-accepted U-shaped toothbrush. Clinically proven to clean 5.1x better in 30 seconds.",
+      "brand": {
+        "@type": "Brand",
+        "name": "AutoBrush"
+      },
+      "award": "ADA Seal of Acceptance",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "12543"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "79.00",
+        "highPrice": "199.00",
+        "offerCount": "3"
+      }
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#2552D0',
+                            dark: '#1E4ED8',
+                            light: '#EFF6FF',
+                        },
+                        text: {
+                            main: '#0F172A',
+                            muted: '#475569',
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #0F172A;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .opacity-0 {
+            opacity: 0;
+        }
+
+        /* FAQ Accordion */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Modals */
+        .modal {
+            display: none;
+        }
+
+        .modal.active {
+            display: flex;
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- 1. ALERT BAR -->
+    <div class="bg-brand-blue text-white text-center py-2 px-4 text-xs md:text-sm font-medium sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-4">
+            <span>Free US Shipping on Family Bundles + 60-Day Guarantee.</span>
+            <span class="hidden sm:inline opacity-50">|</span>
+            <span class="font-bold underline decoration-white/50 underline-offset-2">The only ADA-accepted U-shaped
+                toothbrush.</span>
+        </div>
+    </div>
+
+    <!-- 2. BRAND IDENTITY / FLOATING NAVBAR -->
+    <nav class="glass sticky top-[52px] sm:top-[40px] z-40 px-4 py-4 w-full shadow-sm">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <img src="images/logo.png" alt="AutoBrush Logo" class="h-8 w-auto">
+                <div class="hidden lg:block text-xs text-text-muted border-l border-gray-300 pl-3 max-w-xs">
+                    <strong>World’s only ADA-accepted</strong> U-shaped toothbrush.
+                </div>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex gap-4 text-sm font-semibold text-text-muted">
+                    <a href="#how-it-works" class="hover:text-brand-blue transition">How It Works</a>
+                    <a href="#clinical-results" class="hover:text-brand-blue transition">Clinical Results</a>
+                    <a href="#bundles" class="hover:text-brand-blue transition">Bundles</a>
+                    <a href="#reviews" class="hover:text-brand-blue transition">Reviews</a>
+                    <a href="#faq" class="hover:text-brand-blue transition">FAQ</a>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <a href="#bundles"
+                        class="bg-brand-blue hover:bg-brand-dark text-white px-6 py-2 rounded-xl font-bold shadow-lg shadow-brand-blue/30 transition transform hover:scale-105">
+                        Shop Bundles
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. HERO SECTION (THE HOOK) -->
+    <header class="relative pt-12 pb-20 overflow-hidden bg-gradient-to-br from-brand-light to-white">
+        <div class="absolute inset-0 opacity-20 pointer-events-none"
+            style="background-image: radial-gradient(#2552D0 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 md:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div
+                        class="flex items-center gap-2 mb-4 text-xs font-bold text-brand-dark bg-blue-100/50 w-fit px-3 py-1.5 rounded-full uppercase tracking-wide">
+                        <i class="fa-solid fa-medal text-brand-blue"></i> ADA-Accepted
+                    </div>
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-5 text-gray-900">
+                        The only ADA-accepted toothbrush proven to protect better than a manual brush.
+                    </h1>
+                    <p class="text-lg text-text-muted mb-8 leading-relaxed">
+                        Stop guessing if your family is brushing right. AutoBrush® uses patented nylon bristles to clean
+                        every surface at once. <strong>Get a deeper, even clean in just 30 seconds.</strong>
+                    </p>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 text-brand-blue"><i class="fa-solid fa-circle-check"></i></div>
+                            <p class="text-[15px]"><strong>Cleans up to 5.1× better</strong> than a manual brush in
+                                clinical studies.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 text-brand-blue"><i class="fa-solid fa-circle-check"></i></div>
+                            <p class="text-[15px]"><strong>Removes 82% more plaque</strong> in hard-to-reach areas where
+                                rushed brushing fails.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 text-brand-blue"><i class="fa-solid fa-circle-check"></i></div>
+                            <p class="text-[15px]"><strong>Reduces gingivitis by up to 45%</strong>, supporting
+                                long-term gum health.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 text-brand-blue"><i class="fa-solid fa-circle-check"></i></div>
+                            <p class="text-[15px]"><strong>Full-mouth clean in just 30 seconds</strong>, ending the
+                                2-minute struggle.</p>
+                        </li>
+                    </ul>
+
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 mt-8">
+                        <a href="#bundles"
+                            class="w-full sm:w-auto text-center bg-brand-blue hover:bg-brand-dark text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-brand-blue/30 transition transform hover:-translate-y-1">
+                            Get Your Family Bundle
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative lg:h-[600px] flex justify-center items-center animate-fade-in-up"
+                    style="animation-delay: 0.3s;">
+                    <div class="relative group">
+                        <!-- Glow effect -->
+                        <div
+                            class="absolute -inset-4 bg-brand-blue/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition duration-1000">
+                        </div>
+
+                        <img src="images/hero.png" alt="AutoBrush"
+                            class="relative w-full max-w-[550px] h-auto drop-shadow-[0_20px_50px_rgba(37,82,208,0.25)] transform hover:scale-[1.02] transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 4. OFFER / PRICING SECTION – FAMILY BUNDLES -->
+    <section id="bundles" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 animate-fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Choose your ADA-approved bundle.</h2>
+                <p class="text-lg text-text-muted">Every bundle includes ADA-accepted brushes, patented nylon bristles,
+                    and foaming toothpaste for a perfect clean every time.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+
+                <!-- Single Precision -->
+                <div class="bg-gray-50 rounded-2xl p-6 lg:p-8 border border-gray-200 shadow-sm flex flex-col animate-fade-in-up"
+                    style="animation-delay: 0.2s;">
+                    <h3 class="text-xl font-bold mb-1">Single Precision</h3>
+                    <p class="text-sm text-brand-blue font-bold mb-4">1 Adult AutoBrush®</p>
+                    <p class="text-sm text-text-muted mb-6">Clinical-grade efficiency for adults, or focused cavity
+                        prevention for one child.</p>
+
+                    <ul class="space-y-3 mb-8 flex-grow">
+                        <li class="flex items-start gap-2 text-sm"><i
+                                class="fa-solid fa-check text-brand-blue mt-1"></i> 1 ADA-accepted Sonic Pro.</li>
+                        <li class="flex items-start gap-2 text-sm"><i
+                                class="fa-solid fa-check text-brand-blue mt-1"></i> Experience the difference in plaque
+                            removal before upgrading the whole family.</li>
+                    </ul>
+
+                    <button
+                        class="w-full bg-white border-2 border-brand-blue text-brand-blue font-bold py-3 rounded-xl transition hover:bg-blue-50">Select</button>
+                </div>
+
+                <!-- Family Protection Bundle (Main Offer) -->
+                <div class="bg-brand-blue text-white rounded-2xl p-6 lg:p-8 border border-brand-dark shadow-2xl flex flex-col relative transform md:-translate-y-4 animate-fade-in-up"
+                    style="animation-delay: 0.4s;">
+                    <div
+                        class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-yellow-400 text-yellow-900 text-[10px] font-black uppercase py-1 px-3 rounded-full tracking-wider">
+                        Most Popular
+                    </div>
+                    <h3 class="text-2xl font-bold mb-1">Family Protection</h3>
+                    <p class="text-sm text-brand-light font-bold mb-4">2–3 AutoBrush® Units</p>
+                    <p class="text-sm text-brand-light mb-6 opacity-90">Ideal for busy parents who want every brusher
+                        using ADA-accepted technology.</p>
+
+                    <ul class="space-y-3 mb-6 flex-grow">
+                        <li class="flex items-start gap-2 text-sm"><i
+                                class="fa-solid fa-check text-yellow-400 mt-1"></i> 2-3 ADA-accepted Sonic Pros
+                            (Kids/Adult mix).</li>
+                        <li class="flex items-start gap-2 text-sm"><i
+                                class="fa-solid fa-check text-yellow-400 mt-1"></i> Patented bristles for 5.1× better
+                            cleaning.</li>
+                        <li class="flex items-start gap-2 text-sm"><i
+                                class="fa-solid fa-check text-yellow-400 mt-1"></i> Foaming toothpaste for full-mouth
+                            coverage.</li>
+                        <li class="flex items-start gap-2 text-sm"><i
+                                class="fa-solid fa-check text-yellow-400 mt-1"></i> Fewer cavities, calmer checkups, no
+                            brushing battles.</li>
+                    </ul>
+
+                    <button
+                        class="w-full bg-white text-brand-blue font-bold py-4 rounded-xl shadow-lg transition hover:bg-gray-100 text-lg">Get
+                        Bundle</button>
+                </div>
+
+                <!-- Parent & Me Starter -->
+                <div class="bg-gray-50 rounded-2xl p-6 lg:p-8 border border-gray-200 shadow-sm flex flex-col animate-fade-in-up"
+                    style="animation-delay: 0.6s;">
+                    <h3 class="text-xl font-bold mb-1">Parent & Me</h3>
+                    <p class="text-sm text-brand-blue font-bold mb-4">1 Adult + 1 Kids Unit</p>
+                    <p class="text-sm text-text-muted mb-6">Start a better habit side-by-side with your child.</p>
+
+                    <ul class="space-y-3 mb-8 flex-grow">
+                        <li class="flex items-start gap-2 text-sm"><i
+                                class="fa-solid fa-check text-brand-blue mt-1"></i> 1 Adult + 1 Kids ADA-accepted model.
+                        </li>
+                        <li class="flex items-start gap-2 text-sm"><i
+                                class="fa-solid fa-check text-brand-blue mt-1"></i> Safe sonic modes prevent enamel
+                            erosion.</li>
+                        <li class="flex items-start gap-2 text-sm"><i
+                                class="fa-solid fa-check text-brand-blue mt-1"></i> Protect your gums while ensuring
+                            your child brushes right.</li>
+                    </ul>
+
+                    <button
+                        class="w-full bg-white border-2 border-brand-blue text-brand-blue font-bold py-3 rounded-xl transition hover:bg-blue-50">Select</button>
+                </div>
+
+            </div>
+
+            <!-- Risk Reversal Block -->
+            <div class="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-6 md:p-10 text-center max-w-3xl mx-auto shadow-sm animate-fade-in-up"
+                style="animation-delay: 0.8s;">
+                <h3 class="text-xl md:text-2xl font-bold mb-3"><i
+                        class="fa-solid fa-shield-halved text-brand-blue mr-2"></i> Try it 100% Risk-Free.</h3>
+                <p class="text-text-muted leading-relaxed">
+                    Not experiencing a cleaner mouth or easier routines within 60 days? Send it back for a full refund.
+                    <strong>The ADA trusted the data—we want you to trust the results.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SOCIAL PROOF SECTION -->
+    <section id="reviews" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 animate-fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Trusted by families. Proven by science.</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 animate-fade-in-up">
+                    <div class="flex text-yellow-400 mb-3 text-xs"><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-text-muted italic text-sm mb-6 leading-relaxed">“I used to wonder if my kids actually
+                        got everything clean. With AutoBrush®, our pediatric dentist said their plaque scores are the
+                        best they’ve ever been.”</p>
+                    <div class="flex items-center gap-3 mt-auto">
+                        <div
+                            class="w-8 h-8 bg-brand-light rounded-full flex items-center justify-center text-brand-blue font-bold text-xs">
+                            S</div>
+                        <div>
+                            <p class="font-bold text-sm">Sarah M.</p>
+                            <p class="text-xs text-brand-blue">Austin, TX</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 animate-fade-in-up"
+                    style="animation-delay: 0.1s;">
+                    <div class="flex text-yellow-400 mb-3 text-xs"><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-text-muted italic text-sm mb-6 leading-relaxed">“The ADA seal and clinical numbers
+                        sold me. After a few weeks, my hygienist noted less buildup and easier cleanings. That’s all I
+                        needed to hear.”</p>
+                    <div class="flex items-center gap-3 mt-auto">
+                        <div
+                            class="w-8 h-8 bg-brand-light rounded-full flex items-center justify-center text-brand-blue font-bold text-xs">
+                            D</div>
+                        <div>
+                            <p class="font-bold text-sm">Daniel P.</p>
+                            <p class="text-xs text-brand-blue">Denver, CO</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 animate-fade-in-up"
+                    style="animation-delay: 0.2s;">
+                    <div class="flex text-yellow-400 mb-3 text-xs"><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-text-muted italic text-sm mb-6 leading-relaxed">“Bedtime used to be chaos. Now the
+                        kids run their 30‑second cycle, and I feel like I finally have a clinically sound shortcut.”</p>
+                    <div class="flex items-center gap-3 mt-auto">
+                        <div
+                            class="w-8 h-8 bg-brand-light rounded-full flex items-center justify-center text-brand-blue font-bold text-xs">
+                            M</div>
+                        <div>
+                            <p class="font-bold text-sm">Monica L.</p>
+                            <p class="text-xs text-brand-blue">Charlotte, NC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Authority Block -->
+            <div id="clinical-results"
+                class="mt-12 bg-slate-900 text-white rounded-2xl p-6 md:p-10 shadow-md animate-fade-in-up">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3">ADA-Backed Results</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Tested for over 3 years to earn the ADA Seal—proving its U-shaped design outperforms manual
+                            brushes.
+                        </p>
+                    </div>
+                    <div class="bg-black/30 p-5 rounded-xl border border-white/5">
+                        <p class="text-sm font-medium leading-relaxed">
+                            In clinical trials, AutoBrush delivered <strong>5.1× better plaque removal</strong>,
+                            <strong>82% better cleaning in hard-to-reach areas</strong>, and a <strong>45% reduction in
+                                gingivitis</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FAQ SECTION -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 md:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10 animate-fade-in-up">Frequently Asked
+                Questions</h2>
+
+            <div class="space-y-3 animate-fade-in-up" style="animation-delay: 0.2s;">
+
+                <!-- FAQ 1 -->
+                <div class="faq-item border border-gray-200 rounded-xl bg-gray-50 overflow-hidden cursor-pointer">
+                    <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition"
+                        onclick="toggleFaq(this)">
+                        <h4 class="font-bold text-[15px]">Is AutoBrush® really ADA-accepted?</h4>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-brand-blue text-sm transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-5 bg-gray-50 text-text-muted text-sm">
+                        <p>Yes. It’s the world’s only ADA-accepted U-shaped toothbrush, independently reviewed for
+                            safety and effectiveness.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item border border-gray-200 rounded-xl bg-gray-50 overflow-hidden cursor-pointer">
+                    <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition"
+                        onclick="toggleFaq(this)">
+                        <h4 class="font-bold text-[15px]">How is it different from other online U-shaped brushes?</h4>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-brand-blue text-sm transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-5 bg-gray-50 text-text-muted text-sm">
+                        <p>Most use silicone nubs that fail to remove plaque. AutoBrush® uses patented nylon bristles
+                            and clinical motion backed by the ADA to guarantee a real clean.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item border border-gray-200 rounded-xl bg-gray-50 overflow-hidden cursor-pointer">
+                    <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition"
+                        onclick="toggleFaq(this)">
+                        <h4 class="font-bold text-[15px]">Can 30 seconds really match 2 minutes?</h4>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-brand-blue text-sm transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-5 bg-gray-50 text-text-muted text-sm">
+                        <p>Yes. Traditional brushes clean in sections; AutoBrush® cleans all teeth at once. Studies show
+                            a 30-sec cycle outperforms a manual 2-minute brush.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item border border-gray-200 rounded-xl bg-gray-50 overflow-hidden cursor-pointer">
+                    <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition"
+                        onclick="toggleFaq(this)">
+                        <h4 class="font-bold text-[15px]">Is it safe for kids?</h4>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-brand-blue text-sm transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-5 bg-gray-50 text-text-muted text-sm">
+                        <p>Completely. Kids' models use ultra-soft nylon bristles and gentle sonic motion with no
+                            reported adverse effects in clinical trials.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item border border-gray-200 rounded-xl bg-gray-50 overflow-hidden cursor-pointer">
+                    <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition"
+                        onclick="toggleFaq(this)">
+                        <h4 class="font-bold text-[15px]">Does it support a healthy microbiome?</h4>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-brand-blue text-sm transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-5 bg-gray-50 text-text-muted text-sm">
+                        <p>Yes. By rapidly removing plaque at the gumline, it reduces pathogenic bacteria. Our foaming
+                            toothpaste is also designed for safe bioavailability.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item border border-gray-200 rounded-xl bg-gray-50 overflow-hidden cursor-pointer">
+                    <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition"
+                        onclick="toggleFaq(this)">
+                        <h4 class="font-bold text-[15px]">Who benefits most?</h4>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-brand-blue text-sm transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-5 bg-gray-50 text-text-muted text-sm">
+                        <p>Busy parents, kids who hate brushing, adults with limited dexterity. If you struggle with
+                            perfect 2-minute routines, this is the clinical shortcut.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-item border border-gray-200 rounded-xl bg-gray-50 overflow-hidden cursor-pointer">
+                    <div class="faq-question flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition"
+                        onclick="toggleFaq(this)">
+                        <h4 class="font-bold text-[15px]">What if we don't like it?</h4>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-brand-blue text-sm transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-5 bg-gray-50 text-text-muted text-sm">
+                        <p>If you don't feel a cleaner mouth or enjoy easier routines, you're covered by a 60-day
+                            money-back guarantee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER & LEGAL -->
+    <footer class="bg-slate-900 text-slate-400 py-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+                <img src="images/logo.png" alt="AutoBrush Logo" class="h-6 w-auto brightness-0 invert opacity-60">
+
+                <div class="flex flex-wrap justify-center gap-5 text-sm">
+                    <a href="#" onclick="openModal('privacyModal'); return false;"
+                        class="hover:text-white transition">Privacy</a>
+                    <a href="#" onclick="openModal('termsModal'); return false;"
+                        class="hover:text-white transition">Terms</a>
+                    <a href="#" onclick="openModal('evidenceModal'); return false;"
+                        class="hover:text-white transition">Clinical Evidence</a>
+                    <a href="#" onclick="openModal('returnsModal'); return false;"
+                        class="hover:text-white transition">Warranty</a>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-6 text-xs text-center text-slate-500">
+                <p>&copy; 2026 AutoBrush®. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal"
+        class="modal fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm justify-center items-center p-4">
+        <div class="bg-white rounded-2xl w-full max-w-lg max-h-[80vh] flex flex-col overflow-hidden shadow-2xl">
+            <div class="p-5 border-b border-gray-100 flex justify-between items-center bg-gray-50">
+                <h3 class="font-bold text-lg">Privacy Policy</h3>
+                <button onclick="closeModals()" class="text-gray-400 hover:text-gray-800 transition"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-5 overflow-y-auto text-text-muted text-sm leading-relaxed">
+                <p class="mb-3">Your privacy is important to us. This policy explains how we collect, use, and protect
+                    your personal information.</p>
+                <p>We only collect data necessary to process your transactions and improve your experience. We do not
+                    sell your personal data to third parties.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div id="termsModal"
+        class="modal fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm justify-center items-center p-4">
+        <div class="bg-white rounded-2xl w-full max-w-lg max-h-[80vh] flex flex-col overflow-hidden shadow-2xl">
+            <div class="p-5 border-b border-gray-100 flex justify-between items-center bg-gray-50">
+                <h3 class="font-bold text-lg">Terms of Use</h3>
+                <button onclick="closeModals()" class="text-gray-400 hover:text-gray-800 transition"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-5 overflow-y-auto text-text-muted text-sm leading-relaxed">
+                <p class="mb-3">By accessing our website, you agree to these Terms of Use.</p>
+                <p>The content provided is for informational purposes. The clinical data presented relates specifically
+                    to products bearing the ADA Seal of Acceptance.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clinical Evidence (ADA) Modal -->
+    <div id="evidenceModal"
+        class="modal fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm justify-center items-center p-4">
+        <div class="bg-white rounded-2xl w-full max-w-lg max-h-[80vh] flex flex-col overflow-hidden shadow-2xl">
+            <div class="p-5 border-b border-gray-100 flex justify-between items-center bg-gray-50">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-flask text-brand-blue"></i>
+                    <h3 class="font-bold text-lg">Clinical Evidence & ADA Submission</h3>
+                </div>
+                <button onclick="closeModals()" class="text-gray-400 hover:text-gray-800 transition"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-5 overflow-y-auto text-text-muted text-sm leading-relaxed">
+                <p class="mb-3">This section summarizes the clinical studies submitted to the American Dental
+                    Association in support of the AutoBrush® U-shaped toothbrush.</p>
+                <p>AutoBrush® demonstrated up to <strong>5.1× better overall plaque removal</strong>, up to <strong>82%
+                        more plaque removed in hard-to-reach areas</strong>, and up to <strong>45% greater reduction in
+                        gingivitis indices</strong> over the study period, meeting the ADA’s requirements.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Returns & Warranty Modal -->
+    <div id="returnsModal"
+        class="modal fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm justify-center items-center p-4">
+        <div class="bg-white rounded-2xl w-full max-w-lg max-h-[80vh] flex flex-col overflow-hidden shadow-2xl">
+            <div class="p-5 border-b border-gray-100 flex justify-between items-center bg-gray-50">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-rotate-left text-brand-blue"></i>
+                    <h3 class="font-bold text-lg">Returns, Guarantee & Warranty</h3>
+                </div>
+                <button onclick="closeModals()" class="text-gray-400 hover:text-gray-800 transition"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-5 overflow-y-auto text-text-muted text-sm leading-relaxed">
+                <p class="mb-3">Every AutoBrush® purchase is backed by a <strong>60-day money-back guarantee</strong>:
+                    if you don’t notice easier routines or a cleaner mouth, send it back for a refund.</p>
+                <p>Our warranty covers manufacturing defects.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.animate-fade-in-up');
+            elements.forEach(el => el.style.opacity = '0');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.animation = 'none';
+                        entry.target.offsetHeight;
+                        entry.target.style.animation = null;
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { root: null, threshold: 0.1, rootMargin: "0px" });
+
+            elements.forEach(el => observer.observe(el));
+        });
+
+        function toggleFaq(element) {
+            const parent = element.parentElement;
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== parent) item.classList.remove('active');
+            });
+            parent.classList.toggle('active');
+        }
+
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModals() {
+            document.querySelectorAll('.modal').forEach(modal => modal.classList.remove('active'));
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function (event) { if (event.target.classList.contains('modal')) closeModals(); }
+        document.addEventListener('keydown', function (event) { if (event.key === 'Escape') closeModals(); });
+    </script>
+</body>
+
+</html>
